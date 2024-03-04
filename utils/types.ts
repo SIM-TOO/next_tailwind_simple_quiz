@@ -20,5 +20,5 @@ interface IOption {
 export interface IState {
     id: number;
     title: string;
-    quest: IQuestion[];
+    questions: IQuestion[];
 }
