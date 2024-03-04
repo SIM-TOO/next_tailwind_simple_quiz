@@ -13,12 +13,14 @@ interface Props {
   getAnswer?: (answer: boolean) => void;
 }
 
+
+// 질문 컴포넌트 정의
 const Question = ({ question, withId, checkEnabled, getAnswer }: Props) => {
   const [answer, setAnswer] = useState(0);
   const [isAnswered, setIsAnswered] = useState(false);
   const [isTrue, setIsTrue] = useState(false);
 
-
+  // 애니메이션 효과 설정
   const transitions = useTransition(isAnswered, {
     from: { opacity: 0, height: 0 },
     enter: { opacity: 1, height: 40 },
@@ -85,7 +87,8 @@ const Question = ({ question, withId, checkEnabled, getAnswer }: Props) => {
                     setIsAnswered(true);
                     setIsTrue(question.answer === answer);
                   }}
-                  className={`bg-blue-600 p-2 text-slate-50 rounded text-center shadow hover:bg-blue-500 duration-200 cursor-pointer`}
+                  className={`bg-blue-600 p-2 text-slate-50 rounded text-center shadow duration-200 cursor-pointer
+                   hover:bg-blue-500`}
                 >
                   답변을 확인하세요.
                 </div>

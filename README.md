@@ -1,4 +1,10 @@
-1. 커밋 유형
+1. Next Quiz App
+- Question 2문제 + State 선택(math or alphabet) 2문제
+- Quiz를 통하여 총 2점 이상 획득 시 합격
+
+<br/>
+
+2. 커밋 유형
 
 - Feat 새로운 기능 및 코드 추가 <br/>
 - Fix 버그 수정 <br/>
@@ -11,7 +17,7 @@
 
 <br/>
 
-2. 사용한 라이브러리
+3. 사용한 라이브러리
 - tailwind
 - heroicons
 - react-spring/web

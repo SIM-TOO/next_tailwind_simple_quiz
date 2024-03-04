@@ -8,7 +8,6 @@ interface Props {
   states: IState[];
 }
 
-
 const State = ({ states }: Props) => {
   const [state, setState] = useState(0);
 
